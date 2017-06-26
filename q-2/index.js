@@ -1,12 +1,10 @@
-const moji = "パタトクカシーー";
+const pato = "パトカー";
+const taku = "タクシー";
 
-let an = "";
-for(let i = 0; i < moji.length; i++){
-	if(i % 2 === 0){
-		continue;
-	}else{
-		an += moji.charAt(i);
-	}
+let html = "";
+for(let i = 0; i < pato.length; i++){
+	html += pato[i];
+	html += taku[i];
 }
 
-console.log(an);
+console.log(html);

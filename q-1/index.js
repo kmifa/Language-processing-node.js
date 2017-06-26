@@ -1,11 +1,12 @@
-const moji = "stressed";
-const len  = moji.length - 1;
+const moji = "パタトクカシーー";
 
-let ar = [];
-for(let i = len ; i > -1 ; i--){
-	ar.push(moji[i]);
+let an = "";
+for(let i = 0; i < moji.length; i++){
+	if(i % 2 === 0){
+		continue;
+	}else{
+		an += moji.charAt(i);
+	}
 }
 
-const str = ar.join(',').replace(/,/g,"");
-
-console.log(str);
+console.log(an);
